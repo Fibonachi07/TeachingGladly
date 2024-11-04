@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --text-color: hsl(0, 0%, 20%);
+    --comp-color: hsl(50, 73%, 77%);
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(271, 76%, 66%);
+    padding: 1rem;
+}
+
+.nav__title {
+    font-family: Pacifico;
+    font-size: 3rem;
+    color: var(--text-color);;
+}
+
+.nav__title span {
+    color: var(--comp-color);
+}
+
+.nav__contact { 
+    display: flex;
+    gap: 1.75rem;
+}
+
+.nav__contact p{ 
+    font-family: Pacifico;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.nav__contact span {
+    color: var(--comp-color);
+}
+
+.nav__links {
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: 1;
+    display: flex;
+    padding-top: 6px;
+}
+
+.nav__links a:hover {
+    color: var(--comp-color);
+}
+
+ion-icon {
+    font-size: 32px;
+  }
+
+  .hero__main {
+    background-color: var(--comp-color);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-block: 0.5rem;
+  }
+
+  .hero__title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+
+  button {
+    background-color: hsl(271, 76%, 66%);
+    border: 2px solid var(--comp-color);
+    padding: 10px;
+    position: relative;
+    width:  6.875em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 1.15rem;
+    border-radius: 0.4em;
+  }
+  
+  button p {
+    position: absolute;
+    top: 0.4em;
+    left: 0.9em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: var(--comp-color);
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  
+  button svg {
+    position: absolute;
+    top: 0.42em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: hsl(271, 76%, 66%);
+  }
+  
+  button:hover p {
+    left: 0.33em;
+    color: hsl(271, 76%, 66%);
+  }
+  
+  button:hover svg {
+    opacity: 1;
+  }
+  
+  button:hover {
+    background-color: var(--comp-color);
+  }
